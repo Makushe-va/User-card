@@ -1,16 +1,16 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ДЗ 59. Створення юзерів
+Зробити форму, яка створює “картки користувача” зі значеннями з інпутів. Після сабміту новий користувач зʼявляється у списку праворуч від форми. Якщо будь-яке поле порожнє — сабміт заборонений.
+Поля форми
+Імʼя (firstName, text) — обовʼязково
+Прізвище (lastName, text) — обовʼязково
+Вік (age, number, цілі невідʼємні) — обовʼязково
+Фото (photo, input type="file", лише одне зображення) — обовʼязково
+Функціональні вимоги
+Форма зліва, список користувачів справа (дві колонки)
+Контрольовані інпути через useState
+Валідація: не дозволяти сабміт, якщо будь-яке поле порожнє; для віку — число ≥ 0
+Фото відображати на картці
+Використовувати
+https://react-bootstrap.netlify.app/
+https://react-bootstrap.netlify.app/docs/components/cards
+https://react-bootstrap.netlify.app/docs/forms/form-control
